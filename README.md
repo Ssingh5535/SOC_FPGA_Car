@@ -71,7 +71,8 @@ This repository implements a lane-following RC car SoC on the PYNQ Z2 platform. 
 
 
 ## 3. Block Diagram
-![Block Diagram](/Images/BlockDiagram.png)
+![Block Diagram](/Images/BlockDigram.png)
+
 ---
 
 ## 4. Design Modules
