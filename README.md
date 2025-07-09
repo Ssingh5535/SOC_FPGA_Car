@@ -71,7 +71,7 @@ This repository implements a lane-following RC car SoC on the PYNQ Z2 platform. 
 
 
 ## 3. Block Diagram
-![Block Diagram](/Images/block_diagram.png)
+![Block Diagram](/Images/BlockDiagram.png)
 ---
 
 ## 4. Design Modules
@@ -190,17 +190,23 @@ throt_mmio.write(0x00, duty_cycle_throt)
     - PS7 Domain: 1.256 W (71%)  
     - PL Logic & I/O: ~0.260 W (14%)  
   - **Static**: 0.155 W (8%)  
+![Device Power](/Images/Power.png)  
+
 
 ---
 
 ## 7. Device Layout & Resource Utilization
 
 ### 7.1 Floorplan  
-![FPGA Floorplan](/Images/device_layout.png)  
+![FPGA Floorplan](/Images/Layout.png)  
 Shows placement of PL IP blocks (VDMA, filter, IIC, GPIO) across CLB regions.
 
 ### 7.2 Clocking Summary  
-![Clock Summary](/Images/clk_summary.png)  
+![Clock Summary](/Images/Timing.png)  
+Details MMCM and PLL settings for 100 MHz PS and 48 MHz PL domains.
+
+### 7.3 Clocking Summary  
+![Device Schematic](/Images/Schematic.png)  
 Details MMCM and PLL settings for 100 MHz PS and 48 MHz PL domains.
 
 ---
@@ -237,10 +243,9 @@ vivado -mode batch -source build.tcl
 - **PID Steering**: replace proportional control with full PID loop  
 - **Hardware-Accelerated Detection**: migrate edge/line extraction into PL  
 - **Environmental Robustness**: add adaptive thresholding for varying light  
-- **Additional Perception**: integrate ultrasonic obstacle detection via I²C  
+- **Additional Perception**: integrate ultrasonic obstacle detection via I²C
+- Possibly adding in detection of stop signs for a stop test and then continuing down the lanes.
+![Stop Test](/Images/stop_test.png)  
 
+- 
 ---
-
-## 10. License
-This project is released under the **MIT License**. See [LICENSE](LICENSE) for full terms.
-
