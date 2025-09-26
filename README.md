@@ -206,10 +206,9 @@ Shows placement of PL IP blocks (VDMA, filter, IIC, GPIO) across CLB regions.
 ![Clock Summary](/Images/Timing.png)  
 Details MMCM and PLL settings for 100 MHz PS and 48 MHz PL domains.
 
-### 7.3 Clocking Summary  
+### 7.3 Schematic Summary
 ![Device Schematic](/Images/Schematic.png)  
-Details MMCM and PLL settings for 100 MHz PS and 48 MHz PL domains.
-
+Schematic from Elaborated Design
 ---
 
 ## 8. Getting Started
