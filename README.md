@@ -246,6 +246,7 @@ vivado -mode batch -source build.tcl
 - **Additional Perception**: integrate ultrasonic obstacle detection via I²C
 - Possibly adding in detection of stop signs for a stop test and then continuing down the lanes.
 ![Stop Test](/Images/stop_test.png)  
+![Track](/Images/Track.png)  
 
 - 
 ---
